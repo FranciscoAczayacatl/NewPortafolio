@@ -3,7 +3,7 @@ import ContactMe from "./sections/ContactMe";
 
 import Porfolio from "./sections/Porfolio";
 import Skills from "./sections/Skills";
-import Home from "./sections/home";
+import Home from "./sections/Home";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import "./css/app.css";
 import { useRef } from "react";
