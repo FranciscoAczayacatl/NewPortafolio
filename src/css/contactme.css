@@ -1,0 +1,87 @@
+.contactme-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #005c97; 
+  background: -webkit-linear-gradient(to left, #005c97, #363795); 
+  background: linear-gradient(to left, #005c97, #363795);
+}
+
+
+.box-contact{
+  width: 65vw;
+  height: 80vh;
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+}
+.box-contactme{
+  width:33vw;
+  height: 80vh;
+  border-top-left-radius: 15px;
+  border-end-start-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(66, 18, 100);
+}
+.box-contactme div{
+  margin-top: 2vh;
+  font-size: 3vh;
+}
+.box-form{
+  width: 33vw;
+  height: 80vh;
+  border-top-right-radius:15px;
+  border-end-end-radius:15px ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #e9967a, #e9a28a, #e9ae9b, #e7baab, #e5c6bc);
+}
+
+.box-form form{
+  text-align: center;
+}
+h2{
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15), 0px 2px 8px #000000;
+}
+h4{
+  margin-top: 1vh;
+  margin-bottom: 5px;
+}
+textarea{
+  width: 19vw;
+  height: 20vh;
+  border: 1px solid #025b97;
+  border-radius: 15px;
+  padding: 1vh;
+}
+input{
+  width: 19vw;
+  height: 4vh;
+  border: 1px solid #025b97;
+  border-radius: 15px;
+  padding: 1vh;
+}
+
+button{
+  width: 8vw;
+  height: 5vh;
+  margin-top: 2vh;
+  border: none;
+  background-color: cadetblue;
+  border-radius: 14px;
+  color: white;
+  border-radius:14%;
+  box-shadow:0px 0px 7px 0px #000000
+}
+button:active{
+  color: cadetblue;
+  background-color: white;
+}

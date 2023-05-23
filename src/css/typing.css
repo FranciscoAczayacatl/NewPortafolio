@@ -1,0 +1,23 @@
+.name-home{
+  font-size: 40px;
+  display: flex;
+  gap: 2vh;
+}
+.name-home span{
+  
+  color: brown;
+}
+.profession{
+  font-size: 5em;
+  color: gold;
+  padding: 0;
+  margin: 0;
+
+}
+
+.arror{
+  position: absolute;
+  left: 80vh;
+  top:50vh;
+  width: 100vw;
+}

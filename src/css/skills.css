@@ -1,0 +1,103 @@
+.box-skills-and-eduacation{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+/* .skill-box{
+  width: 100vw;
+  height: 40vh;
+}
+
+.education-box{
+  width: 100vw;
+  height: 40vh;
+} */
+
+.cotainer-box-skills{
+  height: 95vh;
+  width: 50vw;
+  border-radius: 20px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+}
+
+.container-box-education{
+  height: 84vh;
+  width: 46vw;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.skills-img img{
+  width: 15vw;
+}
+
+/* .skills-img{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 1vh;
+  grid-row-gap: 1vh;
+  margin-left: 1vh;
+} */
+/* skills-img{
+  width: 50vw;
+  height: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.title{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1vw;
+  border-bottom: 2px solid white;
+}
+
+.first{
+  display: flex;
+  justify-content: space-between;
+  margin: 3vh;
+  
+}
+
+.description-academic{
+  font-size: 2vh;
+}
+.description-academic a{
+  color: white;
+
+}
+
+.academic-div{
+  margin: 3vh 0 0 3vh;
+}
+
+.box-academic{
+  border-bottom: 2px solid white;
+  padding-bottom: 2vh;
+}
+
+.slick-center img {
+  transform: scale(1);
+  transition: all 0s ease-in-out;
+}
+.butons-cv{
+  width: 100vh;
+  height: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+.butons-cv button{
+  width: 20vw;
+  height: 7vh;
+  font-size: 2vw;
+}
