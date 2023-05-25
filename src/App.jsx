@@ -40,6 +40,7 @@ function App() {
   const settings = () => {
     return (
       <>
+      
         <div className="controlls " onClick={handleModalOpen}>
           <i className="fa-solid fa-gear fa-2x"></i>
         </div>
@@ -72,7 +73,6 @@ function App() {
       }
       containerRef={containerRef}
     >
-      {/* <ScrollTriggerProxy/> */}
       <main data-scroll-container ref={containerRef}>
         {
         settings()
@@ -86,11 +86,12 @@ function App() {
                 
               </div>
         )}
+
         <Home en={isEnglis}></Home>
         <AboutMe en={isEnglis}></AboutMe>
         <Skills en={isEnglis}></Skills>
-        <Porfolio></Porfolio>
-        <ContactMe></ContactMe>
+        <Porfolio en={isEnglis}></Porfolio>
+        <ContactMe en={isEnglis}></ContactMe>
       </main>
     </LocomotiveScrollProvider>
   );
