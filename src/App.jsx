@@ -9,6 +9,7 @@ import "./css/app.css";
 import { useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useState } from "react";
+import reapir from './img/reparar'
 // import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
 function App() {
@@ -96,7 +97,7 @@ function App() {
         <Porfolio en={isEnglis}></Porfolio>
         <ContactMe en={isEnglis}></ContactMe>
           </>
-        ):(<div><h2>celular</h2></div>)
+        ):(<div style={{width:'100vw', height:'100vh', display:'flex',justifyContent:'center', alignItems:'center'}}><img src={reapir}></img></div>)
       }
       </main>
     </LocomotiveScrollProvider>
