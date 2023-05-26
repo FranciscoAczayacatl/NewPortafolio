@@ -124,7 +124,7 @@ function App() {
             <img src={reapir} style={{ width: "40vw" }}></img>{" "}
             <h3>
               {
-                !isEnglis ? ("por el momento la pagina no esta disponible para mobiles disculpelas molestias"): ("For now, the page is not available for mobile devices. We apologize for any inconvenience.")
+                !isEnglis ? ("por el momento la pagina no esta disponible para dispositivos mobiles disculpe las molestias"): ("For now, the page is not available for mobile devices. We apologize for any inconvenience.")
               }
 
             </h3>
