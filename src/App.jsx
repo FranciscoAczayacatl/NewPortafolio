@@ -9,7 +9,7 @@ import "./css/app.css";
 import { useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useState } from "react";
-import reapir from './img/reparar'
+import reapir from './img/reparar.png'
 // import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
 function App() {
