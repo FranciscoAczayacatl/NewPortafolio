@@ -1,6 +1,6 @@
 import AboutMe from "./sections/AboutMe";
 import ContactMe from "./sections/ContactMe";
-
+import { isMobile } from "react-device-detect";
 import Porfolio from "./sections/Porfolio";
 import Skills from "./sections/Skills";
 import Home from "./sections/Home";
@@ -87,11 +87,17 @@ function App() {
               </div>
         )}
 
+      {
+        !isMobile ?(
+          <>
         <Home en={isEnglis}></Home>
         <AboutMe en={isEnglis}></AboutMe>
         <Skills en={isEnglis}></Skills>
         <Porfolio en={isEnglis}></Porfolio>
         <ContactMe en={isEnglis}></ContactMe>
+          </>
+        ):(<div><h2>celular</h2></div>)
+      }
       </main>
     </LocomotiveScrollProvider>
   );
