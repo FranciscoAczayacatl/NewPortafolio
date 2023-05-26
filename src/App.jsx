@@ -97,7 +97,7 @@ function App() {
         <Porfolio en={isEnglis}></Porfolio>
         <ContactMe en={isEnglis}></ContactMe>
           </>
-        ):(<div style={{width:'100vw', height:'100vh', display:'flex',justifyContent:'center', alignItems:'center'}}><img src={reapir}></img></div>)
+        ):(<div style={{width:'100vw', height:'100vh', display:'flex',justifyContent:'center', alignItems:'center'}}><img src={reapir} style={{width:'20vw'}}></img> <h3>por el momento la pagina no esta disponible para mobiles disculpe las molestias</h3></div>)
       }
       </main>
     </LocomotiveScrollProvider>
