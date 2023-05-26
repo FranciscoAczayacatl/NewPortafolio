@@ -23,6 +23,7 @@ const Nav = ({English}) => {
   <div>
       {
       !English ?  (
+        <>
         <motion.div className="nav-box"
       initial={{
         y:'100%'
@@ -46,6 +47,10 @@ const Nav = ({English}) => {
           <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#contacme')}>Contactame</motion.li>
         </motion>
       </motion.div>
+      <div className='sanwchi'>
+        <div><i className="fa-solid fa-bars"></i></div>
+      </div>
+      </>
       ) : (
         <motion.div className="nav-box"
         initial={{

@@ -43,4 +43,25 @@
 .gretting{
   font-size: 50px;
   display:flex;
+  text-align: center;
+  margin-top: 20vh;
+}
+
+@media (max-width:320px ){
+  .gretting{
+  font-size: 50px;
+  display:flex;
+  text-align: center;
+  margin-top: 0;
+}
+}
+.gretting p{
+  font-size: 7vw;
+  font-family: "Merienda";
+  margin-top: 50vh;
+}
+@media (max-width:320px ){
+  .gretting p{
+    font-size: 18vw;
+  }
 }

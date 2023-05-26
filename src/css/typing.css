@@ -1,7 +1,22 @@
+.div-box-home-typing{
+  margin-bottom: 15vh;
+}
+@media (max-width:320px){
+  .div-box-home-typing{
+    margin-bottom: 0;
+  }
+}
 .name-home{
   font-size: 40px;
   display: flex;
   gap: 2vh;
+  margin: 0;
+}
+@media (max-width:320px){
+  .name-home{
+    display: inline;
+    font-size: 20px;
+  }
 }
 .name-home span{
   

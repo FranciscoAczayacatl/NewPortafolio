@@ -9,6 +9,25 @@
   color: white;
 }
 
+.sanwchi{
+  display: none;
+
+}
+@media (max-width: 320px){
+  .nav-box{
+    display: none;
+  }
+  .sanwchi{
+    position: absolute;
+    color: white;
+    z-index: 21;
+    width: 5vw;
+    height: 5vh;
+    top: 0;
+    left: 0;
+  }
+}
+
 .menu-btn{
   background-color: rgba(243, 244, 245, 0.5);
 
