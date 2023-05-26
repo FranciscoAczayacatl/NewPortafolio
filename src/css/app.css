@@ -71,6 +71,14 @@ body{
   justify-content: center;
   align-items: center;
 }
-.modales{
-
+@media (max-width:800px){
+  .modal-content {
+    width: 60vw;
+    height: 70vh;
+    
+  }
+  .modales{
+    width: 7vw;
+    height: 5vh;
+   }
 }

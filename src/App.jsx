@@ -9,14 +9,13 @@ import "./css/app.css";
 import { useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useState } from "react";
-import reapir from './img/reparar.png'
+import reapir from "./img/reparar.png";
 // import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 
 function App() {
-
   const [isEnglis, setIsEnglis] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [modalLeng, setModalLeng] = useState(false)
+  const [modalLeng, setModalLeng] = useState(false);
 
   const handleModalOpen = () => {
     setIsOpen(true);
@@ -25,14 +24,13 @@ function App() {
   const handleModalClose = () => {
     setIsOpen(false);
   };
-  const modalClosed = () =>{
-    setModalLeng(false)
-  }
+  const modalClosed = () => {
+    setModalLeng(false);
+  };
 
   const Eng = () => {
     setIsEnglis(true);
-    setModalLeng(true)
-
+    setModalLeng(true);
   };
 
   const Esp = () => {
@@ -41,7 +39,6 @@ function App() {
   const settings = () => {
     return (
       <>
-      
         <div className="controlls " onClick={handleModalOpen}>
           <i className="fa-solid fa-gear fa-2x"></i>
         </div>
@@ -50,8 +47,18 @@ function App() {
             <div className="close" onClick={handleModalClose}>
               <i className="fa-solid fa-circle-xmark fa-xl"></i>
             </div>
-            <img src="https://flagcdn.com/mx.svg" width="30" alt="México" onClick={Esp} />
-            <img src="https://flagcdn.com/us.svg" width="30" alt="Estados Unidos" onClick={Eng}/>
+            <img
+              src="https://flagcdn.com/mx.svg"
+              width="30"
+              alt="México"
+              onClick={Esp}
+            />
+            <img
+              src="https://flagcdn.com/us.svg"
+              width="30"
+              alt="Estados Unidos"
+              onClick={Eng}
+            />
           </div>
         )}
       </>
@@ -75,30 +82,54 @@ function App() {
       containerRef={containerRef}
     >
       <main data-scroll-container ref={containerRef}>
-        {
-        settings()
-        }
+        {settings()}
         {modalLeng && (
-                <div className="modal_lenguaje">
-                <div className="modal-content">
-                  <p>My current English level is A2, which means I have a basic understanding of the language. I can have simple conversations and comprehend basic information. However, I still need to improve my fluency and confidence in more complex areas. Despite my A2 level, I am committed to learning and improving my English. I am willing to take courses, practice with native speakers, and use online resources to strengthen my language skills.</p>
-                  <button className="modales" onClick={modalClosed}>Closed</button>
-                </div>
-                
-              </div>
+          <div className="modal_lenguaje">
+            <div className="modal-content">
+              <p>
+                My current English level is A2, which means I have a basic
+                understanding of the language. I can have simple conversations
+                and comprehend basic information. However, I still need to
+                improve my fluency and confidence in more complex areas. Despite
+                my A2 level, I am committed to learning and improving my
+                English. I am willing to take courses, practice with native
+                speakers, and use online resources to strengthen my language
+                skills.
+              </p>
+              <button className="modales" onClick={modalClosed}>
+                Closed
+              </button>
+            </div>
+          </div>
         )}
 
-      {
-        !isMobile ?(
+        {!isMobile ? (
           <>
-        <Home en={isEnglis}></Home>
-        <AboutMe en={isEnglis}></AboutMe>
-        <Skills en={isEnglis}></Skills>
-        <Porfolio en={isEnglis}></Porfolio>
-        <ContactMe en={isEnglis}></ContactMe>
+            <Home en={isEnglis}></Home>
+            <AboutMe en={isEnglis}></AboutMe>
+            <Skills en={isEnglis}></Skills>
+            <Porfolio en={isEnglis}></Porfolio>
+            <ContactMe en={isEnglis}></ContactMe>
           </>
-        ):(<div style={{width:'100vw', height:'100vh', display:'flex',justifyContent:'center', alignItems:'center'}}><img src={reapir} style={{width:'20vw'}}></img> <h3>por el momento la pagina no esta disponible para mobiles disculpe las molestias</h3></div>)
-      }
+        ) : (
+          <div
+            style={{
+              width: "100vw",
+              height: "100vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center", flexDirection:'column'
+            }}
+          >
+            <img src={reapir} style={{ width: "40vw" }}></img>{" "}
+            <h3>
+              {
+                !isEnglis ? ("por el momento la pagina no esta disponible para mobiles disculpelas molestias"): ("For now, the page is not available for mobile devices. We apologize for any inconvenience.")
+              }
+
+            </h3>
+          </div>
+        )}
       </main>
     </LocomotiveScrollProvider>
   );
