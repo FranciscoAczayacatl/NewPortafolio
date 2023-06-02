@@ -4,18 +4,44 @@ import { isMobile } from "react-device-detect";
 import Porfolio from "./sections/Porfolio";
 import Skills from "./sections/Skills";
 import Home from "./sections/Home";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { LocomotiveScrollProvider, useLocomotiveScroll } from "react-locomotive-scroll";
 import "./css/app.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { useState } from "react";
 import reapir from "./img/reparar.png";
+import Nav from './sections/Nav'
 // import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
+
 
 function App() {
   const [isEnglis, setIsEnglis] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [modalLeng, setModalLeng] = useState(false);
+  const navRef = useRef(null);
+  const { getScrollPosition } = useLocomotiveScroll();
+  useEffect(() => {
+    const navElement = navRef.current;
+
+    const handleScroll = () => {
+      const { scroll } = getScrollPosition();
+
+      if (scroll.y <= 0) {
+        navElement.style.position = 'fixed';
+        navElement.style.top = 0;
+      } else {
+        navElement.style.position = 'relative';
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [getScrollPosition]);
+
+
 
   const handleModalOpen = () => {
     setIsOpen(true);
@@ -70,6 +96,7 @@ function App() {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
+
         // ... all available Locomotive Scroll instance options
       }}
       watch={
@@ -105,6 +132,7 @@ function App() {
 
         {!isMobile ? (
           <>
+          <Nav ref={navRef} English ={isEnglis}></Nav>
             <Home en={isEnglis}></Home>
             <AboutMe en={isEnglis}></AboutMe>
             <Skills en={isEnglis}></Skills>

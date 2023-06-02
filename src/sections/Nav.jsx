@@ -1,23 +1,23 @@
 import { useState } from 'react';
 import '../css/nav.css';
 import { motion } from 'framer-motion';
-import { useLocomotiveScroll } from 'react-locomotive-scroll';
+// import { useLocomotiveScroll } from 'react-locomotive-scroll';
 
 const Nav = ({English}) => {
   const [click, setClick] = useState(false)
-  const { scroll } = useLocomotiveScroll();
+  // const { scroll } = useLocomotiveScroll();
 
-  const handleScroll = (id) => {
+  // const handleScroll = (id) => {
 
-    let elem = document.querySelector(id);
-    // console.log(elem);
-    setClick(!click);
-    scroll.scrollTo(elem, {
-      offset: '100',
-      duration: '2000',
-      easing: [0.25, 0.0, 0.35, 1.0],
-    });
-  };
+  //   let elem = document.querySelector(id);
+  //   // console.log(elem);
+  //   setClick(!click);
+  //   scroll.scrollTo(elem, {
+  //     offset: '100',
+  //     duration: '2000',
+  //     easing: [0.25, 0.0, 0.35, 1.0],
+  //   });
+  // };
   return (
     
   <div>
@@ -40,11 +40,11 @@ const Nav = ({English}) => {
           <motion className='menu-btn' onClick={()=> setClick(!click)}>
             <p>menu</p>
           </motion>
-          <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#home')}>Inicio</motion.li>
-          <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('.about')}>Sobre mi</motion.li>
-          <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#skills')}>Habilidades/estudios</motion.li>
-          <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#main')}>Proyectos principales</motion.li>
-          <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#contacme')}>Contactame</motion.li>
+         <a href="#home"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >Inicio</motion.li></a> 
+          <a href="#about"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >Sobre mi</motion.li></a>
+          <a href="#skills"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >Habilidades/estudios</motion.li></a>
+          <a href="#main"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >Proyectos principales</motion.li></a>
+          <a href="#contacme"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >Contactame</motion.li></a>
         </motion>
       </motion.div>
       <div className='sanwchi'>
@@ -68,11 +68,16 @@ const Nav = ({English}) => {
             <motion className='menu-btn' onClick={()=> setClick(!click)}>
               <p>menu</p>
             </motion>
-            <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#home')}>Home</motion.li>
-            <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('.about')}>About me</motion.li>
-            <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#skills')}>skills/studies</motion.li>
-            <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#main')}>main projects</motion.li>
-            <motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} onClick={() => handleScroll('#contacme')}>Contact me</motion.li>
+            <a href="#home"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >Home</motion.li></a>
+            <a href="#about"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >About me</motion.li></a>
+            <a href="#skills"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >skills/studies</motion.li></a>
+            <a href="#main"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >main projects</motion.li></a>
+            <a href="#contacme"><motion.li className="menuitem" whileHover={{scale:1.1, y:-5}} whileTap={{scale:0.09, y:0}} >Contact me</motion.li></a>
+            
+            
+            
+            
+            
           </motion>
         </motion.div>
       )

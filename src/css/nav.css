@@ -1,8 +1,9 @@
 .nav-box{
   width: 100vw;
-  z-index: 6;
-  position: absolute;
+  z-index: 9999;
+  position:fixed;
   top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,19 +14,9 @@
   display: none;
 
 }
-@media (max-width: 320px){
-  .nav-box{
-    display: none;
-  }
-  .sanwchi{
-    position: absolute;
-    color: white;
-    z-index: 21;
-    width: 5vw;
-    height: 5vh;
-    top: 0;
-    left: 0;
-  }
+a{
+  text-decoration: none;
+  color: white;
 }
 
 .menu-btn{
