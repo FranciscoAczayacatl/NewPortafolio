@@ -7,7 +7,7 @@ const AboutMe = ({en}) => {
     <>
       {
         !en ? (
-          <div className="aboutme-box about">
+          <div className="aboutme-box" id="about">
           <h1 data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">Sobre mí:</h1>
           <div className="descrition-aboutme" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
             
@@ -38,7 +38,7 @@ const AboutMe = ({en}) => {
           </div>
         </div>
         ) : (
-          <div className="aboutme-box about">
+          <div className="aboutme-box" id="about">
           <h1 data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">about me:</h1>
           <div className="descrition-aboutme" data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
             
