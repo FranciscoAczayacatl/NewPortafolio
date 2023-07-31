@@ -181,8 +181,8 @@ const Skills = ( {en}) => {
     
             </div>
             <div className='butons-cv'>
-            <a href="https://drive.google.com/file/d/18tMH-gCe_aMuFBiNZy_EAULMkAYKnZW1/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Harvard</button></a>
-            <a href="https://drive.google.com/file/d/1Y7Nb3ltF9XP-H6fAZ5UcgcfhDWfCSDzT/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Canva</button></a>
+            <a href="https://drive.google.com/file/d/1KJQP-xqsab7iq6noQR8QBE4oWNmikOFF/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Harvard</button></a>
+            <a href="https://drive.google.com/file/d/1aOb2IfatFjhfcrQI3iJXU7YVHpchaeUm/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Canva</button></a>
             </div>
           </div>
         </div>
@@ -322,8 +322,8 @@ const Skills = ( {en}) => {
     
             </div>
             <div className='butons-cv'>
-            <a href="https://drive.google.com/file/d/1jc42SBgN9dReURI8pz5D5BeKK4IUwzb3/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Harvard</button></a>
-            <a href="https://drive.google.com/file/d/1aY4NXRSN4cx5J200J2w6XaLQKqAKRIKT/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Canva</button></a>
+            <a href="https://drive.google.com/file/d/1ClG2cXuTk0G1b2gCLYBO-e0T0SNO2ctm/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Harvard</button></a>
+            <a href="https://drive.google.com/file/d/1YE93dF8B3qii1rTUqqkBA8vmdUkocsBA/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Canva</button></a>
             </div>
           </div>
         </div>
