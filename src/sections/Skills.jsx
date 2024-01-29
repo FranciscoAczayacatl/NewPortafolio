@@ -182,7 +182,7 @@ const Skills = ( {en}) => {
             </div>
             <div className='butons-cv'>
             
-            <a href="https://drive.google.com/file/d/1aOb2IfatFjhfcrQI3iJXU7YVHpchaeUm/view?usp=sharing" target="_blank" rel="noopener noreferrer"><button>CV Canva</button></a>
+            <a href="https://drive.google.com/file/d/1663GLCUQYBvdNUGob5wflno7Cl1sDC8Q/view?usp=drive_link" target="_blank" rel="noopener noreferrer"><button>CV Canva</button></a>
             </div>
           </div>
         </div>
